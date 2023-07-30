@@ -7,7 +7,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 // Set the /<baseUrl>/ pathname under which your site is served
 // For GitHub pages deployment, it is often '/<projectName>/'
 
-const baseUrl = process.env.NODE_ENV === "production" ? "/Pioneer_Doc/" : "/";
+const baseUrl = process.env.NODE_ENV === "production" ? "/SG2042-Wiki/" : "/";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -23,7 +23,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "sophgocommunity", // Usually your GitHub org/user name.
-  projectName: "Pioneer_Doc", // Usually your repo name.
+  projectName: "SG2042-Wiki", // Usually your repo name.
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",

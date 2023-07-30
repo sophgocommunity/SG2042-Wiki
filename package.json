@@ -1,6 +1,6 @@
 {
-  "name": "pioneer-doc-1",
-  "version": "0.0.0",
+  "name": "sophgo-wiki-1",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
