@@ -11,8 +11,8 @@ const baseUrl = process.env.NODE_ENV === "production" ? "/SG2042-Wiki/" : "/";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Milk-V Pioneer",
-  tagline: "Make native RISC-V development possible",
+  title: "Sophgo Assembled Wiki",
+  tagline: "Duo, Pioneer and SG2042",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here

@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'Setting Up'
+sidebar_label: "Setting Up"
 sidebar_position: 20
 ---
 
@@ -81,7 +81,7 @@ PING 192.168.42.1 (192.168.42.1) 56(84) bytes of data.
 --- 192.168.42.1 ping statistics ---
 5 packets transmitted, 5 received, 0% packet loss, time 4096ms
 rtt min/avg/max/mdev = 0.266/0.289/0.334/0.031 ms
-neko@milk-v:~ 
+neko@milk-v:~
 ```
 
 ### macOS
@@ -89,16 +89,17 @@ neko@milk-v:~
 There is no official driver for RNDIS. We need to install [HoRNDIS](https://joshuawise.com/horndis).
 
 1. Download HoRNDIS driver
-  - Intel https://github.com/jwise/HoRNDIS/releases
-  - Apple silicon https://github.com/jwise/HoRNDIS/files/7323710/HoRNDIS-M1.zip
+
+- Intel https://github.com/jwise/HoRNDIS/releases
+- Apple silicon https://github.com/jwise/HoRNDIS/files/7323710/HoRNDIS-M1.zip
 
 2. Disable System Integrity Protection
 
-    a. Enter macOS recovery
+   a. Enter macOS recovery
 
-    Please refer [macOS User Guide -> Recovery](https://support.apple.com/en-hk/guide/mac-help/mchl338cf9a8/mac) to enter recovery mode.
+   Please refer [macOS User Guide -> Recovery](https://support.apple.com/en-hk/guide/mac-help/mchl338cf9a8/mac) to enter recovery mode.
 
-    b. Open the terminal and type the following command
+   b. Open the terminal and type the following command
 
    ```
     csrutil disable
@@ -106,7 +107,7 @@ There is no official driver for RNDIS. We need to install [HoRNDIS](https://josh
     csrutil enable --without kext
    ```
 
-    c. Restart the Mac
+   c. Restart the Mac
 
 3. Install the Kext extension in the zip pack
 
@@ -118,16 +119,15 @@ There is no official driver for RNDIS. We need to install [HoRNDIS](https://josh
 
 ![rndis-ssh1](/docs/duo/rndis-ssh1.png)
 
-2. Enter the password **milkv** 
+2. Enter the password **milkv**
 
-    (The password will not be displayed on the screen)
+   (The password will not be displayed on the screen)
 
 ![rndis-ssh2](/docs/duo/rndis-ssh2.png)
 
 3. Login successful
 
 ![rndis-ssh3](/docs/duo/rndis-ssh3.png)
-
 
 ## Serial Console
 
@@ -141,13 +141,11 @@ Each pin of a USB-to-TTL cable is defined as follows:
 
 Connect USB to TTL serial cable as shown below. Do not connect the red wire.
 
-
-| Milk-V Dou   | <---> | USB to TTL |
+| Milk-V Duo   | <---> | USB to TTL |
 | ------------ | ----- | ---------- |
 | TX (pin 16)  | <---> | White wire |
 | RX (pin 17)  | <---> | Green wire |
 | GND (pin 18) | <---> | Black wire |
-
 
 ![duo-serial](/docs/duo/duo-serial.jpg)
 
