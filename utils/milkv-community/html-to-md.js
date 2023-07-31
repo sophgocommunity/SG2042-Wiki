@@ -1,6 +1,9 @@
 // @ts-check
 
-const TurndownService = new (require("turndown"))();
+const TurndownService = new (require("turndown"))({
+  codeBlockStyle: "fenced",
+  bulletListMarker: "-",
+});
 const HTMLParser = require("node-html-parser");
 const path = require("node:path");
 const sanitize = require("sanitize-filename");
