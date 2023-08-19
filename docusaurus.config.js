@@ -13,7 +13,7 @@ const baseUrl = process.env.NODE_ENV === "production" ? "/SG2042-Wiki/" : "/";
 const config = {
   title: "Sophgo Assembled Wiki",
   tagline: "Duo, Pioneer and SG2042",
-  favicon: "img/favicon.ico",
+  favicon: "//sophon.cn/favicon.ico",
 
   // Set the production url of your site here
   url: "https://sophgocommunity.github.io",
@@ -65,8 +65,6 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      image: "img/docusaurus-social-card.jpg",
       navbar: {
         title: "",
         logo: {
@@ -76,9 +74,18 @@ const config = {
         items: [
           {
             type: "docSidebar",
-            sidebarId: "tutorialSidebar",
+            sidebarId: "techSidebar",
             position: "left",
-            label: "Wiki",
+            label: "Technical Docs",
+          },
+          {
+            to: baseUrl + "community",
+            label: "Community",
+            position: "left",
+          },
+          {
+            type: "search",
+            position: "right",
           },
         ],
       },
@@ -92,11 +99,88 @@ const config = {
                 label: "Tutorial",
                 to: "/docs/intro",
               },
+              {
+                label: "SOPHGO Official Website",
+                href: "https://en.sophgo.com/",
+              },
             ],
           },
           {
             title: "Community",
-            items: [],
+            items: [
+              {
+                label: "Technical Forum",
+                href: "https://forum.sophgo.com/",
+              },
+              {
+                label: "Duo Group",
+                href: "https://github.com/sophgocommunity/Duo_Doc",
+              },
+              {
+                label: "Pioneer Group",
+                href: "https://github.com/sophgocommunity/Pioneer_Doc",
+              },
+            ],
+          },
+          {
+            title: "Source Code",
+            items: [
+              {
+                label: "SOPHGO Official Github",
+                href: "https://github.com/sophgo",
+              },
+              {
+                label: "SOPHGO Community",
+                href: "https://github.com/orgs/sophgocommunity",
+              },
+            ],
+          },
+          {
+            title: "Contact Us",
+            items: [
+              {
+                html:
+                  '<div class="ft-flex"><span>Email:</span><div>' +
+                  ["global.sales@sophgo.com", "global.support@sophgo.com"]
+                    .map((l) => `<a href="mailto:${l}">${l}</a>`)
+                    .join("<br>") +
+                  "</div>",
+              },
+              {
+                html:
+                  '<div class="ft-flex"><span>Hotline:</span><div>' +
+                  ["+86-10-57590723", "+86-10-57590724"].map((l) => `<a href="tel:${l}">${l}</a>`).join("<br>") +
+                  "</div>",
+              },
+              {
+                html:
+                  '<div class="ft-flex"><span class="ft-follow">Follow Us:</span><div class="ft-icons">' +
+                  [
+                    {
+                      icon: "weibo",
+                      href: "https://m.weibo.cn/u/7729472519",
+                    },
+                    {
+                      icon: "facebook",
+                      href: "https://www.facebook.com/SophonAI",
+                    },
+                    {
+                      icon: "twitter",
+                      href: "https://www.twitter.com/SophonAI",
+                    },
+                  ]
+                    .map(
+                      (o) =>
+                        `<a href="${o.href} title=${o.icon}"><span class="glyphicon glyphicon-${o.icon}"></span></a>`
+                    )
+                    .join(" ") +
+                  "</div>",
+              },
+              {
+                label: "Collaboration",
+                href: "mailto:xintong.wang@sophgo.com",
+              },
+            ],
           },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Sophgo, Inc. Built with Docusaurus.`,
