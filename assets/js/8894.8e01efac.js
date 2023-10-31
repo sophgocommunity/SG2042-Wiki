@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksophgo_wiki_1=self.webpackChunksophgo_wiki_1||[]).push([[8894],{8894:(s,k,e)=>{e.r(k)}}]);
