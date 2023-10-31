@@ -58,6 +58,30 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      algolia: {
+        // The application ID provided by Algolia
+        appId: "2EV5TTSHMG",
+
+        // Public API key: it is safe to commit it
+        apiKey: "77f9e322b3af7058e6644ff737c43b78",
+
+        indexName: "sg2042-wiki--intro",
+
+        // Optional: see doc section below
+        contextualSearch: true,
+
+        // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
+        // replaceSearchResultPathname: {
+        //   from: /\/SG2042-Wiki/,
+        //   to: "",
+        // },
+
+        // Optional: Algolia search parameters
+        searchParameters: {},
+
+        // Optional: path for search page that enabled by default (`false` to disable it)
+        searchPagePath: "search",
+      },
       navbar: {
         title: "",
         logo: {
